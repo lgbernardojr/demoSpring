@@ -20,6 +20,6 @@ public class GreetingsController {
 	@GetMapping("/greeting")
 	public Greetings greeting(@RequestParam(value = "name", 
 											defaultValue = "World") String name) {
-		return new Greetings(counter.incrementAndGet(), String.format(template, name));
+		return new Greetings(counter.incrementAndGet(), String.format(template, name), name);
 	}
 }
