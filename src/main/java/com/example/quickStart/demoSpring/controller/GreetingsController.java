@@ -22,9 +22,4 @@ public class GreetingsController {
 											defaultValue = "World") String name) {
 		return new Greetings(counter.incrementAndGet(), String.format(template, name));
 	}
-	
-	@GetMapping("/greetings")
-	public Greetings greetAll() {
-		return ;
-	}
 }
