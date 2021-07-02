@@ -6,6 +6,8 @@ public class Human {
 	private String name;
 	private long points;
 	
+	public Human(){}
+	
 	public Human(int id, String name, long points) {
 		super();
 		this.id = id;
